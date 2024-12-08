@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angkatan 15</title>
+    <!-- Standard Favicon -->
+    <link href="https://assets.onecompiler.app/42x4wv4cn/42zp88b7j/CAKRAWARDAYA_akt15-transformed.png" rel="icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .header img {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        caption {
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://assets.onecompiler.app/42x4wv4cn/42zp88b7j/CAKRAWARDAYA_akt15-transformed.png" alt="Logo Cakrawardaya">
+        <h1>Angkatan 15</h1>
+    </div>
+    <div class="container">
+        <table>
+            <caption>Struktur Pengurus</caption>
+            <tr>
+                <th>Jabatan</th>
+                <th>Nama</th>
+            </tr>
+            <tr>
+                <td>Pratama PA</td>
+                <td>Abi Aryatha Dewayuwana</td>
+            </tr>
+            <tr>
+                <td>Pratama PI</td>
+                <td>Azalia Chalula Reisa Cahyani</td>
+            </tr>
+            <tr>
+                <td>Kerani PA</td>
+                <td>Ercha De Spinka</td>
+            </tr>
+            <tr>
+                <td>Kerani PI</td>
+                <td>Jessica Faiya Fairish Veerzaara</td>
+            </tr>
+            <tr>
+                <td>Juang PA</td>
+                <td>Dio Giffari Tribuana Putra</td>
+            </tr>
+            <tr>
+                <td>Juang PI</td>
+                <td>Grace Ediestri</td>
+            </tr>
+        </table>
+
+        <table>
+            <caption>Daftar Anggota</caption>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+            </tr>
+            <!-- Data anggota -->
+            <script>
+                const anggota = [
+                    "AKBAR", "AURA MUTIARA", "CLARA AZALEA", "LINTANG", "GHISELLA CAHAYA", 
+                    "JEFA", "IRA", "LEYVIA", "DHELITA", "AZZUHRA", "SASKIA SM", "NOVIATI", 
+                    "REVANIA", "KEISYA", "FITRI", "SELIA", "FITRIA", "RENDRA", "REFENDA EMA", 
+                    "ILHAM ADWITYA SAPUTRA", "FABIAN", "NISA", "FIDYA ARINI", "NIAARAMDHANI"
+                ];
+                document.write(anggota.map((nama, i) => `
+                    <tr>
+                        <td>${i + 1}</td>
+                        <td>${nama}</td>
+                    </tr>
+                `).join(''));
+            </script>
+        </table>
+    </div>
+    <div class="footer">
+        © 2024 Pramuka Cakrawardaya. All rights reserved.
+    </div>
+</body>
+</html>
